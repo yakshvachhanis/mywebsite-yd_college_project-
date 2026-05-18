@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive IT Website</title>
     <style>
-        * {
+      * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -63,11 +63,10 @@
 
 
 
-
         .footer {
             background-color: rgb(23, 21, 38);
             color: #ccc;
-            padding: 50px 0;
+           padding: 40px 20px;
             font-family: Arial, sans-serif;
         }
 
@@ -83,8 +82,7 @@
         }
 
         .footer-col {
-            width: 23%;
-            margin-bottom: 30px;
+          flex: 1 1 250px;
         }
 
         .footer-col h4,
@@ -95,7 +93,9 @@
         }
 
         .footer-col h6 {
-            font-size: 20px;
+           color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
         }
 
         .footer a {
@@ -121,12 +121,16 @@
             display: flex;
             gap: 10px;
             margin-top: 15px;
+             padding: 10px;
+   font-size: 20px;
         }
 
         .social-icons a {
             font-size: 25px;
             color: #CADCFC;
             transition: color 0.3s;
+             padding: 10px;
+  
         }
 
         .social-icons a:hover {
@@ -137,6 +141,7 @@
         .email-input {
             padding: 8px;
             width: 70%;
+             height: 40px;
             border: none;
             outline: none;
             border-radius: 5px;
@@ -144,6 +149,8 @@
 
         .btn-send {
             padding: 8px 10px;
+            height: 40px;
+   width: 45px;
             border: none;
             background-color: rgb(93, 67, 205);
             color: white;
@@ -172,7 +179,7 @@
 
         @media (max-width: 600px) {
             .footer-col {
-                width: 100%;
+              
                 text-align: center;
             }
 
@@ -335,10 +342,17 @@
     .N-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 200px;
+      gap: 40px;
       justify-items: center;
       align-items: center;
     }
+    @media(max-width:768px){
+
+  .N-container{
+    gap: 25px;
+  }
+
+}
 
     .N-item {
       text-align: center;
@@ -346,8 +360,8 @@
     }
 
     .N-img {
-      width: 300px;
-      height: 300px;
+      width: 275px;
+      height: 275px;
       display: block;
       margin: 0 auto 20px;
       border-radius: 8px;
@@ -391,7 +405,39 @@
         max-width: 100%;
       }
     }
-      
+   .welcome-section{
+  display:flex;
+  padding:50px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.welcome-image img{
+  width:100%;
+  max-width:500px;
+  height:auto;
+  border-radius:20px;
+  border:2px solid black;
+  object-fit:cover;
+  display:block;
+}
+
+@media(max-width:768px){
+
+  .welcome-section{
+    flex-direction:column;
+    padding:20px;
+  }
+
+  .welcome-image img{
+    width:100%;
+    height:auto;
+  }
+
+}
     </style>
 </head>
 
@@ -411,19 +457,18 @@
   <img src="i15.jpg" alt="" width="99%" style="margin: 0 auto; display: block;">
     </section>
     <section>
-        <div style="display: flex;padding: 50px;text-align: center;">
+      <div class="welcome-section">
             <div>
                 <p style="font-size: 30px;"><b>Welcome to our Company</b></p> <br><br>
-                <hr width="700px" size="5px" color="_blank"> <br>
+                <hr style="width:100%;" size="5px" color="_blank"> <br>
                 <p>Welcome to the team! We are thrilled to have you join us and look forward to working with you. We're
                     excited about the skills and experience you bring and believe you will be a valuable asset to our
                     company. </p><br><br><br><br>
                 <img src="i18.jpg" alt="Welcome Image"
-                    style="width: 350px; height: 350px;border-radius: 50%;">
+                    style="max-width:100%; height:auto; border-radius:50%;">
             </div>
-            <div style="margin-left: 200px;">
-                <img src="i17.jpg" alt="Team Image"
-                    style="height: 600px;width: 600px;border-radius: 50% 50% 0px 0px;border: 2px solid black  ;">
+           <div class="welcome-image">
+                <img src="i17.jpg" alt="Team Image">
             </div>
         </div>
     </section>
@@ -589,12 +634,11 @@
 
 
                 <div class="footer-col">
-                    <h6>Get Updates</h6>
-
-                    <form>
-                        <input type="email" placeholder="Email Address" class="email-input">
-                        <button class="btn-send"><ion-icon name="search-outline"></ion-icon></button>
-                    </form>
+                   <h6>Get Updates</h6>
+        <form>
+          <input type="email" placeholder="Email Address" class="email-input">
+          <button class="btn-send"><ion-icon name="send-outline"></ion-icon></button>
+        </form>
                     <p class="career">Start Your Career...</p>
                 </div>
 
