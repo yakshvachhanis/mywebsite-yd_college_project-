@@ -63,7 +63,7 @@
         .footer {
     background-color: rgb(23, 21, 38);
     color: #ccc;
-    padding: 50px 0;
+   padding: 40px 20px;
     font-family: Arial, sans-serif;
 }
 
@@ -79,8 +79,7 @@
 }
 
 .footer-col {
-    width: 23%;
-    margin-bottom: 30px;
+    flex: 1 1 250px;
 }
 
 .footer-col h4,
@@ -91,7 +90,9 @@
 }
 
 .footer-col h6 {
-    font-size: 20px;
+    color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
 }
 
 .footer a {
@@ -168,7 +169,7 @@
 
 @media (max-width: 600px) {
     .footer-col {
-        width: 100%;
+       
         text-align: center;
     }
 
@@ -181,16 +182,16 @@
     }
 }
     .contact-section {
-            padding: 80px 10%;
-            background-color: #1a1a2e;
-        }
+    padding: 50px 5%;
+    background-color: #1a1a2e;
+}
 
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 50px;
-        }
+       .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 25px;
+}
 
         .contact-left {
             flex: 1 1 400px;
@@ -256,23 +257,32 @@
         }
 
         
-        .info-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 60px;
-        }
-
-        .info-item {
-            display: flex;
-            align-items: center;
-            flex: 1 1 300px;
-        }
-
+  .info-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 700px;
+    margin-top: 25px;
+}
+@media (max-width: 768px) {
+.info-row{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+}
+     .info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.info-item div{
+    line-height: 1.4;
+}
         .icon-circle {
             background-color: #6c63ff;
-            width: 60px;
-            height: 60px;
+              width: 50px;
+    height: 50px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -297,20 +307,28 @@
         }
 
        
-        @media (max-width: 768px) {
-            .contact-section {
-                padding: 60px 5%;
-            }
+       @media (max-width: 768px) {
 
-            .contact-container {
-                flex-direction: column;
-            }
+    .contact-section {
+        padding: 30px 5%;
+    }
 
-            .info-row {
-                flex-direction: column;
-                gap: 20px;
-            }
-        }
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-right {
+        padding: 20px;
+    }
+
+  
+
+    .info-item {
+        margin-bottom: 10px;
+    }
+
+}
     </style>
 </head>
 <body>
@@ -432,13 +450,12 @@
                 </div>
 
                
-                <div class="footer-col">
-                    <h6>Get Updates</h6>
-                 
-                    <form>
-                        <input type="email" placeholder="Email Address" class="email-input">
-                        <button class="btn-send"><ion-icon name="search-outline"></ion-icon></button>
-                    </form>
+                 <div class="footer-col">
+                   <h6>Get Updates</h6>
+        <form>
+          <input type="email" placeholder="Email Address" class="email-input">
+          <button class="btn-send"><ion-icon name="send-outline"></ion-icon></button>
+        </form>
                     <p class="career">Start Your Career...</p>
                 </div>
 
