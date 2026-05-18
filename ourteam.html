@@ -67,7 +67,7 @@
         .footer {
             background-color: rgb(23, 21, 38);
             color: #ccc;
-            padding: 50px 0;
+           padding: 40px 20px;
             font-family: Arial, sans-serif;
         }
 
@@ -83,8 +83,7 @@
         }
 
         .footer-col {
-            width: 23%;
-            margin-bottom: 30px;
+          flex: 1 1 250px;
         }
 
         .footer-col h4,
@@ -95,7 +94,9 @@
         }
 
         .footer-col h6 {
-            font-size: 20px;
+            color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
         }
 
         .footer a {
@@ -163,27 +164,27 @@
         }
 
 
-        @media (max-width: 900px) {
-            .footer-col {
-                width: 45%;
-                margin-bottom: 20px;
-            }
-        }
+       @media (max-width: 900px) {
+    .footer-col {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
 
-        @media (max-width: 600px) {
-            .footer-col {
-                width: 100%;
-                text-align: center;
-            }
+@media (max-width: 600px) {
+    .footer-col {
+       
+        text-align: center;
+    }
 
-            .social-icons {
-                justify-content: center;
-            }
+    .social-icons {
+        justify-content: center;
+    }
 
-            .email-input {
-                width: 60%;
-            }
-        }
+    .email-input {
+        width: 60%;
+    }
+}
 
         .K6 {
             background-image: url('i58.jpg');
@@ -266,6 +267,9 @@
 
    
         .team-header {
+            width: 100%;
+    text-align: center;
+    justify-content: center;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -273,6 +277,10 @@
             gap: 40px;
             margin-bottom: 60px;
         }
+        .team-title,
+.team-description{
+    width: 100%;
+}
 
         .team-title p {
             color: #6c63ff;
@@ -307,34 +315,35 @@
         }
 
 
-        .team-member {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 10px 0;
-            cursor: pointer;
-        }
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    padding: 20px 0;
+    cursor: pointer;
+}
 
 
-        .member-left h1 {
-            display: flex;
-            align-items: center;
-            font-size: 1.6rem;
-            color: rgba(0, 0, 0, 0.6);
-            font-weight: 600;
-            gap: 15px;
-            margin: 0;
-        }
+ .member-left h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    gap: 12px;
+    margin: 0;
+}
 
 
         .Y:hover {
             color: rgb(59, 11, 180);
         }
-        .fw-semibold{
-            float: right;
-            
-        }
+     
 
         .Y1 {
             width: 90px;
@@ -349,13 +358,12 @@
         }
 
 
-        .member-right {
-            text-align: right;
-            font-weight: 600;
-            color: #444;
-            font-size: 1rem;
-        }
-
+       .member-right {
+    text-align: center;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95rem;
+}
 
         @media (max-width: 768px) {
             .team-header {
@@ -458,13 +466,12 @@
         }
 
 
-        .Z2 {
-            font-size: 15px;
-            text-align: justify;
-            line-height: 1.6;
-            transition: all 0.3s ease;
-        }
-
+.Z2 {
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+}
         .Z2:hover {
             border-bottom: 2px solid rgb(159, 129, 223);
             padding: 8px;
@@ -491,7 +498,9 @@
             }
 
             .Z {
-                width: 100%;
+                 width: 100%;
+    margin: 0;
+    padding: 0 10px;
             }
 
             .Z-img {
@@ -506,13 +515,11 @@
             color: black;
         }
 
-        .team-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
+      .team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
 
 
         .team-intro {
@@ -545,13 +552,14 @@
             background-color: rgb(59, 11, 180);
         }
 
-        .team-members {
-            flex: 2 1 600px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
+.team-members {
+    flex: 2 1 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 35px;
+}
 
         .team-card {
             position: relative;
@@ -786,7 +794,7 @@
                     </h1>
                 </div>
                 <div class="member-right">
-                    <span class="fw-semibold" style="padding-left: 770px;">Partner at NA</span>
+<span class="fw-semibold">Partner at NA</span>
                 </div>
             </div>
 
@@ -801,7 +809,7 @@
                     </h1>
                 </div>
                 <div class="member-right">
-                    <span class="fw-semibold" style="padding-left: 765px;">Designer at NA</span>
+                    <span class="fw-semibold">Designer at NA</span>
                 </div>
             </div>
 
@@ -816,7 +824,7 @@
                     </h1>
                 </div>
                 <div class="member-right">
-                    <span class="fw-semibold" style="padding-left: 765px;">UI/UX at NA</span>
+                    <span class="fw-semibold">UI/UX at NA</span>
                 </div>
             </div>
 
@@ -831,7 +839,7 @@
                     </h1>
                 </div>
                 <div class="member-right">
-                    <span class="fw-semibold" style="padding-left: 700px;">Developer at NA</span>
+                   <span class="fw-semibold">Developer at NA</span>
                 </div>
             </div>
 
@@ -1015,11 +1023,11 @@
     </div>
   </section>
 
-    <footer class="footer">
+     <footer class="footer">
         <div class="container">
             <div class="row">
 
-
+          
                 <div class="footer-col">
                     <h4 class="text-warning">NA</h4>
                     <small class="text-uppercase">Our Location</small>
@@ -1027,19 +1035,15 @@
                     <small class="text-uppercase">Register Now</small>
                     <p><a href="mailto:info@example.com">abc@example.com</a></p>
 
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/" target="_blank"><ion-icon
-                                name="logo-facebook"></ion-icon></a>
-                        <a href="https://x.com/i/flow/login" target="_blank"><ion-icon
-                                name="logo-twitter"></ion-icon></a>
-                        <a href="https://www.instagram.com/" target="_blank"><ion-icon
-                                name="logo-instagram"></ion-icon></a>
-                        <a href="https://www.linkedin.com/" target="_blank"><ion-icon
-                                name="logo-linkedin"></ion-icon></a>
+                    <div class="social-icons" >
+                        <a href="https://www.facebook.com/" target="_blank" style="margin: 20px;"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://x.com/i/flow/login" target="_blank" style="margin: 20px;"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.instagram.com/" target="_blank" style="margin: 20px;"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.linkedin.com/" target="_blank" style="margin: 20px;"><ion-icon name="logo-linkedin"></ion-icon></a>
                     </div>
                 </div>
 
-
+          
                 <div class="footer-col">
                     <h6>Our Services</h6>
                     <ul>
@@ -1052,25 +1056,24 @@
                     </ul>
                 </div>
 
-
+              
                 <div class="footer-col">
                     <h6>Company</h6>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="ourteam.html">Team</a></li>
-          <li><a href="contactus.html">Contact</a></li> 
-        </ul>
+                   <li> <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="ourteam.html">Team</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
                 </div>
 
-
-                <div class="footer-col">
-                    <h6>Get Updates</h6>
-
-                    <form>
-                        <input type="email" placeholder="Email Address" class="email-input">
-                        <button class="btn-send"><ion-icon name="search-outline"></ion-icon></button>
-                    </form>
+               
+                 <div class="footer-col">
+                   <h6>Get Updates</h6>
+        <form>
+          <input type="email" placeholder="Email Address" class="email-input">
+          <button class="btn-send"><ion-icon name="send-outline"></ion-icon></button>
+        </form>
                     <p class="career">Start Your Career...</p>
                 </div>
 
